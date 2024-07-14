@@ -38,7 +38,7 @@ class PaymentSuccessfulScreen extends StatelessWidget {
                 width: double.infinity,
                 height: 42.0,
                 child: ElevatedButton(
-                  onPressed: () => Navigator.of(context).pop,
+                  onPressed: () => Navigator.of(context).pop(),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),

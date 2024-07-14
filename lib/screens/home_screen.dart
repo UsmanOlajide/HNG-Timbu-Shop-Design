@@ -634,7 +634,7 @@ class _HomeScreenState extends State<HomeScreen> {
               );
             }
             return const Center(
-              child: Text('Loading...'),
+              child: CircularProgressIndicator.adaptive(),
             );
           }),
     );

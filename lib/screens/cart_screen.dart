@@ -394,58 +394,67 @@ class _CartScreenState extends State<CartScreen> {
                                                   horizontal: 24.0,
                                                   vertical: 20.0,
                                                 ),
-                                                height: 72.0,
+                                                height: 74.0,
                                                 decoration: BoxDecoration(
-                                                  // color: Colors.red,
-                                                  color:
-                                                      const Color(0xFFF9FAFB),
+                                                  border:
+                                                      Border.all(color: gray50),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           8.0),
                                                 ),
                                                 child: Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .spaceBetween,
                                                   children: [
-                                                    Container(
-                                                      height: 32.0,
-                                                      width: 46.0,
-                                                      decoration: BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      6.0)),
-                                                      child: SvgPicture.asset(
-                                                          'assets/mastercard.svg'),
-                                                    ),
-                                                    const SizedBox(width: 8.0),
-                                                    Column(
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
+                                                    Row(
                                                       children: [
-                                                        Text(
-                                                          '**** **** **** 1234',
-                                                          style:
-                                                              Theme.of(context)
-                                                                  .textTheme
-                                                                  .bodySmall!
-                                                                  .copyWith(
-                                                                    color:
-                                                                        neutral,
-                                                                  ),
+                                                        Container(
+                                                          height: 32.0,
+                                                          width: 46.0,
+                                                          decoration: BoxDecoration(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6.0)),
+                                                          child: SvgPicture.asset(
+                                                              'assets/mastercard.svg'),
                                                         ),
-                                                        Text(
-                                                          '05/24',
-                                                          style:
-                                                              Theme.of(context)
+                                                        const SizedBox(
+                                                            width: 8.0),
+                                                        Column(
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            Text(
+                                                              '**** **** **** 1234',
+                                                              style: Theme.of(
+                                                                      context)
                                                                   .textTheme
                                                                   .bodySmall!
                                                                   .copyWith(
                                                                     color:
                                                                         neutral,
                                                                   ),
+                                                            ),
+                                                            Text(
+                                                              '05/24',
+                                                              style: Theme.of(
+                                                                      context)
+                                                                  .textTheme
+                                                                  .bodySmall!
+                                                                  .copyWith(
+                                                                    color:
+                                                                        neutral,
+                                                                  ),
+                                                            ),
+                                                          ],
                                                         ),
                                                       ],
-                                                    )
+                                                    ),
+                                                    SvgPicture.asset(
+                                                        'assets/check.svg')
                                                   ],
                                                 ),
                                               ),

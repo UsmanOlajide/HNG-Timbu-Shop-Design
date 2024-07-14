@@ -9,7 +9,6 @@ class Shoe {
     required this.id,
     required this.photoUrls,
     required this.price,
-    // required this.availableQuantity,
   });
 
   final String name;
@@ -37,7 +36,6 @@ class Shoe {
         return '$imageUrl/${photo['url']}';
       }).toList(),
       price: ((map['current_price'] ?? []) as List).firstOrNull ?? {},
-      // availableQuantity:  map['available_quantity'] as int,
     );
   }
 
